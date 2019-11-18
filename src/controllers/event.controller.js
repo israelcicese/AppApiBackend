@@ -24,7 +24,6 @@ notesCtrl.getEvents = async (req, res) => {
         return b.puntaje - a.puntaje
     });
 
-    console.log(datosOrdenados[0]);
 
     // parte de adquisición de los eventos por medio del id_places de datos ordenados
 
