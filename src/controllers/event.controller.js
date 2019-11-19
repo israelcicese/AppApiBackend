@@ -1,7 +1,6 @@
 const notesCtrl = {};
-const Event = require('../models/event');
+const Event = require('../models/Event');
 const axios = require('axios')
-const { getByCoordinatesPlaces } = require('../controllers/coordinates.controller');
 notesCtrl.getEvents = async (req, res) => {
 
     // adquisición de todos los eventos cercanos
