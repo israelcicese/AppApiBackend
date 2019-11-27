@@ -4,8 +4,8 @@ const googleSearchCtrl = {};
 
 googleSearchCtrl.getFindByText = async (req, res) => {
 
-    console.log(req.body.texto);
-    const palabra = req.body.texto;
+    console.log(req.query.texto);
+    const palabra = req.query.texto;
     const newpalabra =  palabra.replace(/ /g, "%");
     console.log(newpalabra);
     

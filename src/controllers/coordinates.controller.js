@@ -9,9 +9,9 @@ googleCtrl.getByCoordinatesPlaces = async (req, res) => {
     //const newpalabra =  palabra.replace(/ /g, "+");
     //console.log(newpalabra);
 
-    const tipoLugar = req.body.tipo;
-    const latitud = req.body.latitud;
-    const longitud = req.body.longitud;
+    const tipoLugar = req.query.tipo;
+    const latitud = req.query.latitud;
+    const longitud = req.query.longitud;
     
     //const latitud= 31.8621378;
     //const longitud = -116.6244962;

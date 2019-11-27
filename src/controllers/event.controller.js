@@ -3,10 +3,11 @@ const Event = require('../models/Event');
 const axios = require('axios')
 notesCtrl.getEvents = async (req, res) => {
 
+
     // adquisición de todos los eventos cercanos
-    const tipoLugar = req.body.tipo;
-    const latitud = req.body.latitud;
-    const longitud = req.body.longitud;
+    const tipoLugar = req.query.tipo;
+    const latitud = req.query.latitud;
+    const longitud = req.query.longitud;
 
     const places = await axios.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + latitud + "," + longitud + "&radius=1500&type=" + tipoLugar + "&language=es-419&keyword=cruise&key=AIzaSyBq85Capapk3Mj7-UOhYoKq9pK6AW94954");
     const datosSinOrdenar = [];
